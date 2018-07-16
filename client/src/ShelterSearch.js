@@ -54,6 +54,8 @@ class ShelterSearch extends React.Component {
         onClick={() => this.props.onFoodClick(shelter)}
       >
         <td>{shelter.name}</td>
+        <td>{shelter.description}</td>
+        <td>{shelter.beds}</td>
       </tr>
     ));
 
@@ -84,6 +86,8 @@ class ShelterSearch extends React.Component {
             </tr>
             <tr>
               <th className='eight wide'>Name</th>
+              <th className='eight wide'>Description</th>
+              <th className='eight wide'>Beds</th>
             </tr>
           </thead>
           <tbody>

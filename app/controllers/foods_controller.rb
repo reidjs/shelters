@@ -7,7 +7,7 @@ class FoodsController < ApplicationController
     else
       render(
         status: 200,
-        json: Shelter.where(["description LIKE ?", "%#{q}%"]).limit(100)
+        json: Shelter.where(["name LIKE ?", "%#{q}%"]).limit(100)
       )
     end
   end

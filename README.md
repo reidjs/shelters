@@ -1,2 +1,2 @@
-# To run locally
+# Usage
 `rails start`

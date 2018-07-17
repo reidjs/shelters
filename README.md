@@ -1,2 +1,2 @@
 # To run locally
-rails start
+`rails start`

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import SelectedFoods from './SelectedFoods';
-// import FoodSearch from './FoodSearch';
 import ShelterSearch from './ShelterSearch';
 import SelectedShelters from './SelectedShelters';
 

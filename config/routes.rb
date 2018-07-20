@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   scope '/api' do
-    get :food, to: 'foods#index'
+    get :shelters, to: 'shelters#index'
   end
 end

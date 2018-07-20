@@ -1,5 +1,20 @@
-# #!/usr/bin/env ruby
+# !/usr/bin/env ruby
+Shelter.create!(
+  name: 'United States Mission Canoga Park Transitional Housing',
+  description: 'Our purpose is to provide our residents with a long term clean and sober home with quality meals and a self-help work program that provides each person with the opportunity of turning their lives around.',
+  beds: 14,
+)
+Shelter.create!(
+  name: 'Home Again Shelter',
+  description: '90 Bed Shelter. The new facility includes private family bedrooms, a commercial kitchen, common dining room and living spaces, meeting rooms, computer education center, playground and garden, all geared toward helping families achieve a brighter future.',
+  beds: 90,
+)
 
+Shelter.create!(
+  name: 'Womens Shelter',
+  description: '20 Bed Shelter.',
+  beds: 20,
+)
 # require 'csv'
 
 # COLUMNS = [

@@ -8,7 +8,8 @@ export default function SelectedShelters(props) {
       key={idx}
       onClick={() => props.onShelterClick(idx)}
     >
-      <td>{shelter.description}</td>
+      <td>{shelter.name}</td>
+      <td>{shelter.beds}</td>
     </tr>
   ));
 
@@ -21,7 +22,8 @@ export default function SelectedShelters(props) {
           </th>
         </tr>
         <tr>
-          <th className='eight wide'>Description</th>
+          <th className='eight wide'>Name</th>
+          <th className='eight wide'>Beds</th>
         </tr>
       </thead>
       <tbody>

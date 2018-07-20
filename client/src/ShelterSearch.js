@@ -48,10 +48,10 @@ class ShelterSearch extends React.Component {
     const { showRemoveIcon, shelters } = this.state;
     const removeIconStyle = showRemoveIcon ? {} : { visibility: 'hidden' };
 
-    const foodRows = shelters.map((shelter, idx) => (
+    const shelterRows = shelters.map((shelter, idx) => (
       <tr
         key={idx}
-        onClick={() => this.props.onFoodClick(shelter)}
+        onClick={() => this.props.onShelterClick(shelter)}
       >
         <td>{shelter.name}</td>
         <td>{shelter.description}</td>
@@ -81,6 +81,10 @@ class ShelterSearch extends React.Component {
                     onClick={this.handleSearchCancel}
                     style={removeIconStyle}
                   />
+                  <div className="ui checkbox">
+                    <input type="checkbox" name="example"/>
+                    <label>Has beds available</label>
+                  </div>
                 </div>
               </th>
             </tr>
@@ -91,7 +95,7 @@ class ShelterSearch extends React.Component {
             </tr>
           </thead>
           <tbody>
-            {foodRows}
+            {shelterRows}
           </tbody>
         </table>
       </div>

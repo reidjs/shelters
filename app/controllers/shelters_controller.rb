@@ -1,8 +1,9 @@
-class FoodsController < ApplicationController
+class SheltersController < ApplicationController
   def index
     q = params[:q]
 
     if q.blank?
+      p "here"
       render status: 400, json: { error: 'Expected parameter `q` '}
     else
       render(
